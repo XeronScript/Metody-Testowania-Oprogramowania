@@ -11,6 +11,10 @@ def my_printf(format_string, param):
                 param = param.swapcase()
                 print(param,end="")
                 shouldDo=False
+            elif i+3 < len(format_string) and format_string[i] == '#' and format_string[i+1] == '.' and format_string[i+3] == 'k':
+                str_lim = int(format_string[i+2])
+                print(param[:str_lim])
+                shouldDo = False
             else:
                 print(format_string[i], end="")
         else:
