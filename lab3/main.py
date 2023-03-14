@@ -15,6 +15,9 @@ def my_printf(format_string,param):
                 print(param, end="")
                 shouldDo=False
 
+            elif format_string[i] == '#' and format_string[i+1] == '.' and format_string[i+2] == 'k':
+                skip = 2
+
             elif i+2 < len(format_string) and format_string[i] == '#' and format_string[i+1] == '.':
                 j = i+2
                 while j < len(format_string) and re.match("\d", format_string[j]):
