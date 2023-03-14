@@ -27,6 +27,18 @@ def my_printf(format_string,param):
                         print(param[0:num], end="")
                         skip = j - i
 
+            elif format_string[i] == '#' and re.match("\d", format_string[i+1]):
+                j = i+1
+                while j < len(format_string) and re.match("\d", format_string[j]):
+                    j += 1
+
+                if j < len(format_string) and format_string[j] == 'k':
+                    num = 0
+                    if j > i+1:
+                        num = int(format_string[i+1:j])
+                        print(param[0:num], end="")
+                        skip = j - i
+
             else:
                 if skip > 0:
                     skip -= 1
