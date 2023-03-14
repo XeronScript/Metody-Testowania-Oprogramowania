@@ -25,6 +25,7 @@ def my_printf(format_string,param):
                     if j > i+2:
                         num = int(format_string[i+2:j])
                         print(param[0:num], end="")
+                        skip = j - i
 
             else:
                 if skip > 0:
