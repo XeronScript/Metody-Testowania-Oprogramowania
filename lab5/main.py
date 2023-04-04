@@ -2,6 +2,16 @@
 
 import sys
 
+def calc_param(num):
+    new_param = str(num)
+    res = ""    
+    
+    for digit in new_param:
+        res += str((int(digit) - 1) % 10)
+        
+    return res
+    
+
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True
