@@ -28,12 +28,16 @@ def calc_param(num: int, fill: str):
 
 def my_printf(format_string, param):
     pattern = r"#.[0-9]+g"
+    fill_search = re.search(pattern, format_string)
 
-    fill_span = re.search(pattern, format_string).span()
-    fill = format_string[fill_span[0]+2: fill_span[1]]
+    if (fill_search is not None):
+        fill_span = fill_search.span()
+        fill = format_string[fill_span[0]+2: fill_span[1]-1]
 
-    new_param = calc_param(param, fill)
-    print(re.sub(pattern, new_param, format_string))
+        new_param = calc_param(param, fill)
+        print(re.sub(pattern, new_param, format_string))
+    else:
+        print(format_string)
 
 
 data = sys.stdin.readlines()
