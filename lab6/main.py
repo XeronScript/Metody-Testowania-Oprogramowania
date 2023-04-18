@@ -8,6 +8,10 @@ def calc_param(num):
     old_param = str(num)
     res = ""
 
+    if old_param[0] == '-':
+        res += old_param[0]
+        old_param = old_param[1:]
+
     for digit in old_param:
         res += str((int(digit)*9+1) % 10)
 
