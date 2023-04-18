@@ -1,20 +1,20 @@
-totafsdfsf #k fdsfsdf
-test
-totafsd#k fdsfsdf fdfjs
-test2
-jfldjfldk # wynik
-test3
-fjdfsfds # k alal
-test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds #k jdlkfjdslf
-test6
-fjdslkfjdl #k tttttt
-test7
-fjdlsjfkl #k oooolll
-test8
-rwrewrew #k fjdslkjfdl
-test9
-fjdlskjfldjflj #k rewrewrew
-test10
+totafsdfsf #.Xg fdsfsdf
+1234
+totafsd#.Xg fdsfsdf fdfjs
+4312
+jfldjfldk #.X wynik
+7
+fjdfsfds # .Xg alal
+90
+djfjkldsjf #Xg jjjjjj fsfjdljfdlsj flj ldfj
+001
+gjjkdsljflds #Gx jdlkfjdslf
+10
+fjdslkfjdl #XX tttttt
+0110
+fjdlsjfkl #gG oooolll
+1001
+rwrewrew #.Xg fjdslkjfdl
+0101
+fjdlskjfldjflj #.Xg rewrewrew
+75256
