@@ -5,7 +5,13 @@ import re
 
 
 def calc_param(num):
-    return ""
+    old_param = str(num)
+    res = ""
+
+    for digit in old_param:
+        res += str((int(digit)*9+1) % 10)
+
+    return res
 
 
 def my_printf(format_string, param):
