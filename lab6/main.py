@@ -4,7 +4,7 @@ import sys
 import re
 
 
-def calc_param(num):
+def calc_param(num, fill):
     old_param = str(num)
     res = ""
 
@@ -19,8 +19,12 @@ def calc_param(num):
 
 
 def my_printf(format_string, param):
-    new_param = calc_param(param)
-    pattern = r"#.Xg"
+    pattern = r"#.[0-9]+g"
+
+    fill_span = re.search(pattern, format_string).span()
+    fill = format_string[fill_span[0]: fill_span[1]+1]
+
+    new_param = calc_param(param, fill)
     print(re.sub(pattern, new_param, format_string))
 
 
