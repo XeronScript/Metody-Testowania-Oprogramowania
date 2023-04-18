@@ -20,9 +20,8 @@ def calc_param(num: int, fill: str):
             res += "0"
             f -= 1
 
-    for digit in old_param and f > 0:
+    for digit in old_param:
         res += str((int(digit)*9+1) % 10)
-        f -= 1
 
     return res
 
