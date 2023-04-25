@@ -21,9 +21,8 @@ def my_printf(format_string, param):
     search = re.search(pattern, format_string)
     
     if search is not None:
-        span = search.span()
-        arg = format_string[span[0]+1 : span[1]-1]
-        
+        new_param = convertToHex(str(hex(int(param)))[2:])
+        print(re.sub(pattern, new_param, format_string))
     else:
         print(format_string)
 
