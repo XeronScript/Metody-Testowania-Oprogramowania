@@ -3,12 +3,17 @@
 import sys
 import re
 
-def convert(c: chr):
+def convertToHex(decimal: str) -> str:
     nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    if c in nums:
-        return c
-    else:
-        return chr(ord(c) + 6)
+    res = ''
+    
+    for c in decimal:
+        if c in nums:
+            res += c
+        else:
+            res += chr(ord(c) + 6)
+            
+    return res
 
 
 def my_printf(format_string, param):
@@ -18,6 +23,7 @@ def my_printf(format_string, param):
     if search is not None:
         span = search.span()
         arg = format_string[span[0]+1 : span[1]-1]
+        
     else:
         print(format_string)
 
