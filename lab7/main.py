@@ -2,6 +2,10 @@
 
 import sys
 
+def convert(c: chr):
+    return chr(ord(c) + 6)
+
+
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True
