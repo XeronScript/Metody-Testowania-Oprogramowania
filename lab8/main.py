@@ -18,6 +18,12 @@ def my_printf(format_string, param):
     pattern = r"#.Zj"
     search = re.search(pattern, format_string)
 
+    if search is not None:
+        new_param = convert_to_hex(str(hex(int(param)))[2:])
+        print(re.sub(pattern, new_param, format_string))
+    else:
+        print(format_string)
+
 
 data = sys.stdin.readlines()
 
