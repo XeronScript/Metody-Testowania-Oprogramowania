@@ -27,7 +27,10 @@ def my_printf(format_string, param):
         if l <= len(new_param):
             print(re.sub(pattern, new_param, format_string))
         else:
-            padded_param = "".join(["0" for _ in range(len(new_param) - l)])
+            padded_param = ""
+            for _ in range(l - len(new_param)):
+                padded_param += "0"
+
             padded_param += new_param
             print(re.sub(pattern, padded_param, format_string))
 
