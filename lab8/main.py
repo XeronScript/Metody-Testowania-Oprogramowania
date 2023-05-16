@@ -8,10 +8,12 @@ def convert_to_hex(param: str) -> str:
     res = ""
 
     for c in param:
-        if ord(c) >= "a" and ord(c) <= "f":
+        if ord(c) >= ord("a") and ord(c) <= ord("f"):
             res += chr(ord(c) + 6)
         else:
             res += c
+
+    return res
 
 
 def my_printf(format_string, param):
@@ -25,7 +27,7 @@ def my_printf(format_string, param):
         if l <= len(new_param):
             print(re.sub(pattern, new_param, format_string))
         else:
-            padded_param = "".join([0 for i in range(len(new_param - l))])
+            padded_param = "".join(["0" for _ in range(len(new_param) - l)])
             padded_param += new_param
             print(re.sub(pattern, padded_param, format_string))
 
