@@ -2,31 +2,33 @@
 
 import sys
 
-def convert_letters(param):
-    res = ''
-    num = str(param)
-    
-    for i in num:
-        if ord(i) >= 'a' and ord(i) <= 'f':
-            res += chr(ord(i) + 6)
+
+def convert_to_hex(param: str) -> str:
+    res = ""
+
+    for c in param:
+        if ord(c) >= "a" and ord(c) <= "f":
+            res += chr(ord(c) + 6)
+        else:
+            res += c
 
 
 def my_printf(format_string, param):
-    #print(format_string)
-    shouldDo=True
-    for idx in range(0,len(format_string)):
+    # print(format_string)
+    shouldDo = True
+    for idx in range(0, len(format_string)):
         if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                print(param,end="")
-                shouldDo=False
+            if format_string[idx] == "#" and format_string[idx + 1] == "k":
+                print(param, end="")
+                shouldDo = False
             else:
-                print(format_string[idx],end="")
+                print(format_string[idx], end="")
         else:
-            shouldDo=True
+            shouldDo = True
     print("")
 
 
-data=sys.stdin.readlines()
+data = sys.stdin.readlines()
 
-for i in range(0,len(data),2):
-    my_printf(data[i].rstrip(),data[i+1].rstrip())
+for i in range(0, len(data), 2):
+    my_printf(data[i].rstrip(), data[i + 1].rstrip())
