@@ -2,7 +2,16 @@
 
 import sys
 
-def my_printf(format_string,param):
+def convert_letters(param):
+    res = ''
+    num = str(param)
+    
+    for i in num:
+        if ord(i) >= 'a' and ord(i) <= 'f':
+            res += chr(ord(i) + 6)
+
+
+def my_printf(format_string, param):
     #print(format_string)
     shouldDo=True
     for idx in range(0,len(format_string)):
@@ -15,6 +24,7 @@ def my_printf(format_string,param):
         else:
             shouldDo=True
     print("")
+
 
 data=sys.stdin.readlines()
 
