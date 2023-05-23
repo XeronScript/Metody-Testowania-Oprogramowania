@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 
 import sys
+import re
+
+
+def split_float(num: str):
+    p, s = num.split(".")
+    return (int(p), int(s))
 
 
 def convert_prefix(prefix: str):
@@ -14,23 +20,17 @@ def convert_prefix(prefix: str):
     return chr(ord("a") + prefix_int)
 
 
-def calculate_postfix(param: str):
+def calculate_suffix(param: str):
     return (int(param) + 5) % 10
 
 
 def my_printf(format_string, param):
-    # print(format_string)
-    shouldDo = True
-    for idx in range(0, len(format_string)):
-        if shouldDo:
-            if format_string[idx] == "#" and format_string[idx + 1] == "k":
-                print(param, end="")
-                shouldDo = False
-            else:
-                print(format_string[idx], end="")
-        else:
-            shouldDo = True
-    print("")
+    pattern = r"#.(\d+)h"
+    search = re.search(pattern, format_string)
+
+    if search is not None:
+        l = search.group(1)
+        prefix, suffix = split_float(l)
 
 
 data = sys.stdin.readlines()
