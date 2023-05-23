@@ -4,12 +4,12 @@ import sys
 import re
 
 
-def split_float(num: str):
+def split_float(num: str) -> tuple[int, int]:
     p, s = num.split(".")
     return (int(p), int(s))
 
 
-def convert_prefix(prefix: str):
+def convert_prefix(prefix: str) -> str | None:
     if not prefix.isdigit() or len(prefix) != 1:
         return None
 
@@ -20,8 +20,8 @@ def convert_prefix(prefix: str):
     return chr(ord("a") + prefix_int)
 
 
-def calculate_suffix(param: str):
-    return (int(param) + 5) % 10
+def calculate_suffix(param: int) -> int:
+    return (param + 5) % 10
 
 
 def my_printf(format_string, param):
@@ -31,6 +31,9 @@ def my_printf(format_string, param):
     if search is not None:
         l = search.group(1)
         prefix, suffix = split_float(l)
+        conv_prefix = convert_prefix(str(prefix))
+        conv_suffix = calculate_suffix(suffix)
+        new_param = conv_prefix
 
 
 data = sys.stdin.readlines()
