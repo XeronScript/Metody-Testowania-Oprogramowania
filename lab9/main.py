@@ -36,12 +36,16 @@ def my_printf(format_string, param):
         conv_suffix = str(calculate_suffix(suffix))
         new_param = ".".join([conv_prefix, conv_suffix])
 
-        if l >= len(conv_suffix):
+        if l > len(conv_suffix):
+            for _ in range(l - len(conv_suffix)):
+                new_param += "0"
             print(re.sub(pattern, new_param, format_string))
         elif l == 0:
             print(re.sub(pattern, conv_prefix, format_string))
         elif l < len(conv_suffix):
             new_param = ".".join([conv_prefix, conv_suffix[:l]])
+            print(re.sub(pattern, new_param, format_string))
+        else:
             print(re.sub(pattern, new_param, format_string))
     else:
         print(format_string)
