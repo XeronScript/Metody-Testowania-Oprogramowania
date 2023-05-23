@@ -29,11 +29,22 @@ def my_printf(format_string, param):
     search = re.search(pattern, format_string)
 
     if search is not None:
+        l = int(search.group(1))
+
         prefix, suffix = split_float(param)
         conv_prefix = convert_prefix(str(prefix))
         conv_suffix = str(calculate_suffix(suffix))
         new_param = ".".join([conv_prefix, conv_suffix])
-        print(re.sub(pattern, new_param, format_string))
+
+        if l >= len(conv_suffix):
+            print(re.sub(pattern, new_param, format_string))
+        elif l == 0:
+            print(re.sub(pattern, conv_prefix, format_string))
+        elif l < len(conv_suffix):
+            new_param = ".".join([conv_prefix, conv_suffix[:l]])
+            print(re.sub(pattern, new_param, format_string))
+    else:
+        print(format_string)
 
 
 data = sys.stdin.readlines()
