@@ -1,20 +1,80 @@
-totafsdfsf #k fdsfsdf
+totafsdfsf fdsfsdf
+3.14
+totafsd fdsfsdf fdfjs
+3.141
+jfldjfldk wynik
+3.1415
+fjdfsfds alal
+3.14151
+djfjkldsjf jjjjjj fsfjdljfdlsj flj ldfj
+3.141516
+gjjkdsljflds jdlkfjdslf
+3.1415161
+fjdslkfjdl tttttt
+3.14151617
+fjdlsjfkl oooolll
+3.141516171
+rwrewrew fjdslkjfdl
+3.1415161718
+fjdlskjfldjflj rewrewrew
+3.141516171819
+totafsdfsf #.15h fdsfsdf
+3.14
+totafsd #.0h fdsfsdf fdfjs
+3.15
+jfldjfldk #.5h wynik
+0.2
+fjdfsfds #.21h alal
+1.5
+djfjkldsjf #.24h jjjjjj fsfjdljfdlsj flj ldfj
+1.2
+gjjkdsljflds #.10h jdlkfjdslf
+9.9
+fjdslkfjdl #.2h tttttt
+2.1
+fjdlsjfkl #.1h oooolll
+3.7
+rwrewrew #.0h fjdslkjfdl
+5.6
+fjdlskjfldjflj #.100h rewrewrew
+0.1
+totafsdfsf #.2h fdsfsdf
+0.7453820583148137
+totafsd#.3h fdsfsdf fdfjs
+1.42530941476521205
+jfldjfldk #.4h wynik
+2.1179733985828296
+fjdfsfds #.5h alal
+3.7133094728898871
+djfjkldsjf #.6h jjjjjj fsfjdljfdlsj flj ldfj
+4.47092089986096103715376981690782493584096081584598
+gjjkdsljflds #.7h jdlkfjdslf
+5.3098106019895974236818382964218037697986412937878
+fjdslkfjdl #.8h tttttt
+6.17295407830614727654572522881368215273539339577344
+fjdlsjfkl #.9h oooolll
+7.85891170515843664460584964337994420530912844493176
+rwrewrew #.10h fjdslkjfdl
+8.80060432133030153625217889104128389688266978351294
+fjdlskjfldjflj #.0h rewrewrew
+9.875159053048416
+totafsdfsf #.Zh fdsfsdf
 test
-totafsd#k fdsfsdf fdfjs
-test2
+totafsd#5h fdsfsdf fdfjs
+tes
 jfldjfldk # wynik
-test3
-fjdfsfds # k alal
-test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds #k jdlkfjdslf
-test6
-fjdslkfjdl #k tttttt
-test7
-fjdlsjfkl #k oooolll
-test8
-rwrewrew #k fjdslkjfdl
-test9
-fjdlskjfldjflj #k rewrewrew
-test10
+te
+fjdfsfds # h alal
+t
+djfjkldsjf #Z jjjjjj fsfjdljfdlsj flj ldfj
+o
+gjjkdsljflds #h jdlkfjdslf
+s
+fjdslkfjdl #15 tttttt
+7
+fjdlsjfkl # oooolll
+8
+rwrewrew #h fjdslkjfdl
+9
+fjdlskjfldjflj #h rewrewrew
+0
