@@ -11,8 +11,8 @@ def getHexOrDecimal(param: int) -> str:
         return hex(param).replace("0x", "")
 
 
-def calculate_param_expression(param: int):
-    return int((param * 2) / len(str(param)))
+def calculate_param_expression(param: str) -> int:
+    return int((int(param) * 2) / len(param))
 
 
 def my_printf(format_string, param):
@@ -23,6 +23,8 @@ def my_printf(format_string, param):
         new_param = calculate_param_expression(param)
         hex_or_decimal = getHexOrDecimal(new_param)
         print(re.sub(pattern, hex_or_decimal, format_string))
+    else:
+        print(format_string)
 
 
 data = sys.stdin.readlines()
