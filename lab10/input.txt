@@ -1,20 +1,100 @@
-totafsdfsf #a fdsfsdf
+#a
+2
+#a
+4
+#a
+8
+#a
+16
+#a
+32
+#a
+64
+#a
+129
+#a
+256
+#a
+520
+#a
+1024
+#a
+99
+#a
+97
+#a
+95
+#a
+93
+#a
+91
+#a
+3
+#a
+5
+#a
+7
+#a
+9
+#a
 11
-totafsd#a fdsfsdf fdfjs
-1
+totafsdfsf #l fdsfsdf
+614
+totafsd a#A fdsfsdf fdfjs
+nie ma szans że zadziała
 jfldjfldk # wynik
-test3
+37
+fjdfsfds # d alal
+9
+djfjkldsjf d# jjjjjj fsfjdljfdlsj flj ldfj
+21
+gjjkdsljflds a# jdlkfjdslf
+6
+fjdslkfjdl a tttttt
+7
+fjdlsjfkl #l oooolll
+8
+rwrewrew #l fjdslkjfdl
+9
+fjdlskjfldjflj #l rewrewrew
+0
+#a
+-1
+#a
+-20
+#a
+-301
+#a
+-4021
+#a
+-5321
+#a
+-64320
+#a
+-199
+#a
+-7
+#a
+-10
+#a
+-8
+totafsdfsf # fdsfsdf
+1
+totafsd# fdsfsdf fdfjs
+2
+jfldjfldk # wynik
+3
 fjdfsfds # k alal
-test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds #a jdlkfjdslf
-12345
-fjdslkfjdl #a tttttt
-9182
-fjdlsjfkl o#ao oooolll
-15
-rwrewrew p#a fjdslkjfdl
-10238
-fjdlskjfldjflj a# rewrewrew
-test10
+4
+djfjkldsjf jjjjjj fsfjdljfdlsj flj ldfj
+5
+gjjkdsljflds jdlkfjdslf
+6
+fjdslkfjdl tttttt
+7
+fjdlsjfkl oooolll
+8
+rwrewrew fjdslkjfdl
+9
+fjdlskjfldjflj rewrewrew
+0
