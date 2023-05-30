@@ -2,19 +2,13 @@
 
 import sys
 
-def my_printf(format_string,param):
-    #print(format_string)
-    shouldDo=True
-    for idx in range(0,len(format_string)):
-        if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                print(param,end="")
-                shouldDo=False
-            else:
-                print(format_string[idx],end="")
-        else:
-            shouldDo=True
-    print("")
+def calculate_param_expression(param):
+    return int( (param*2) / len(str(param)) )
+    
+
+def my_printf(format_string, param):
+    pass
+    
 
 data=sys.stdin.readlines()
 
