@@ -7,7 +7,7 @@ import re
 def convert_to_special_binary(param: str) -> str:
     try:
         param = int(param)
-    except TypeError:
+    except ValueError:
         return ''
 
     binary = bin(param).replace('-0b', '').replace('0b', '')
@@ -20,7 +20,7 @@ def convert_to_special_binary(param: str) -> str:
         else:
             new_param += possible_characters[i % 10]
     
-    return new_param.__reversed__()
+    return new_param[::-1]
 
 
 def my_printf(format_string: str, param: str) -> None:
