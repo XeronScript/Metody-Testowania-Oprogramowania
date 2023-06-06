@@ -5,7 +5,11 @@ import re
 
 
 def convert_to_special_binary(param: str) -> str:
-    param = int(param)
+    try:
+        param = int(param)
+    except TypeError:
+        return ''
+        
     binary = bin(param).replace('-0b', '').replace('0b', '')
     new_param = ''
     possible_characters = 'abcdefghij'
