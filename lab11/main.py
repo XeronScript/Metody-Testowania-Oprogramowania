@@ -5,7 +5,8 @@ import re
 
 
 def convert_to_special_binary(param: str) -> str:
-    binary = bin(int(param)).replace('-0b', '').replace('0b', '')
+    param = int(param)
+    binary = bin(param).replace('-0b', '').replace('0b', '')
     new_param = ''
     possible_characters = 'abcdefghij'
 
@@ -18,12 +19,15 @@ def convert_to_special_binary(param: str) -> str:
     return new_param.__reversed__()
 
 
-def my_printf(format_string,param):
+def my_printf(format_string: str, param: str) -> None:
     pattern = '#b'
     search = re.search(pattern, format_string)
 
     if search is not None:
-        
+        new_param = convert_to_special_binary(param)
+
+    else:
+        print(format_string)
 
 
 data=sys.stdin.readlines()
