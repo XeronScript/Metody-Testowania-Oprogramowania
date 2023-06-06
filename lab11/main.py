@@ -9,7 +9,7 @@ def convert_to_special_binary(param: str) -> str:
         param = int(param)
     except TypeError:
         return ''
-        
+
     binary = bin(param).replace('-0b', '').replace('0b', '')
     new_param = ''
     possible_characters = 'abcdefghij'
@@ -29,6 +29,7 @@ def my_printf(format_string: str, param: str) -> None:
 
     if search is not None:
         new_param = convert_to_special_binary(param)
+        print(re.sub(pattern, new_param, format_string))
 
     else:
         print(format_string)
