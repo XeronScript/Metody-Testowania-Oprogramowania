@@ -20,6 +20,10 @@ def convert_to_special_binary(param: str) -> str:
 
 def my_printf(format_string,param):
     pattern = '#b'
+    search = re.search(pattern, format_string)
+
+    if search is not None:
+        
 
 
 data=sys.stdin.readlines()
